@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(44, 44, 44);
+        flex-direction: column;
+        gap: 10px;
+      }
+      #container {
+        position: relative;
+      }
+      p {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+      }
+      #start-game {
+        background-color: rgba(16, 73, 230, 0.819);
+        font-size: 24px;
+        padding: 25px;
+        border-radius: 99999999px;
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      #start-game:active {
+        background-color: rgba(12, 67, 218, 0.647);
+      }
+    </style>
+    <script type="module" src="index.js" async></script>
+  </head>
+  <body>
+    <div id="container">
+      <p><span>Score : </span> <span id="score">0</span></p>
+      <canvas></canvas>
+    </div>
+    <button id="start-game">Click here to start the game</button>
+  </body>
+</html>
